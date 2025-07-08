@@ -30,6 +30,7 @@ module alu(
     output reg overflow,
     output reg negative
     );
+    reg [15:0]product;
     parameter Add = 0, Sub = 1,
               MUL = 2, AND = 3,
               OR = 4, XOR = 5,XNOR=6,
@@ -49,8 +50,9 @@ module alu(
     overflow=(x[7]& ~y[7]& ~out[7]) | (~x[7] & y[7] & out[7]);
     end
     MUL: begin
-    out=x*y;
-        overflow=(x*y)>8'hFF;
+    product=x*y;
+    out=product[7:0]
+    overflow=|product[15:8];
     end
         
     AND:out=x&y;
