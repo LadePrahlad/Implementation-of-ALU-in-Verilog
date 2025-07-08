@@ -48,7 +48,11 @@ module alu(
     {carry,out}=x-y;
     overflow=(x[7]& ~y[7]& ~out[7]) | (~x[7] & y[7] & out[7]);
     end
-    MUL:out=x*y;
+    MUL: begin
+    out=x*y;
+        overflow=(x*y)>8'hFF;
+    end
+        
     AND:out=x&y;
     OR:out=x|y;
     XOR:out=x^y;
