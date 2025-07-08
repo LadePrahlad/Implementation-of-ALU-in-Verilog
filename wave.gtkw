@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Jul 08 15:56:55 2025
+[*]
+[dumpfile] "C:\Users\ladep\wave.vcd"
+[dumpfile_mtime] "Tue Jul 08 14:29:52 2025"
+[dumpfile_size] 2747
+[savefile] "C:\Users\ladep\wave.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -87 -87
+*-17.000000 290000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 221
+@22
+alu_tb.x[7:0]
+alu_tb.y[7:0]
+alu_tb.sel[3:0]
+@28
+alu_tb.zero
+alu_tb.overflow
+alu_tb.carry
+alu_tb.negative
+@23
+alu_tb.out[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
