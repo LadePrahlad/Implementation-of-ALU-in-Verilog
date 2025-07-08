@@ -62,7 +62,8 @@ module alu_tb();
  #10 sel=12;
  #10 sel=13;
  #10 sel=14;
- $finish;
+ #10 sel=2;x=8'd255;y=8'd255;
+ #10 $finish;
  end
  initial begin
     $dumpfile("wave.vcd");    // This tells the simulator to generate the file
