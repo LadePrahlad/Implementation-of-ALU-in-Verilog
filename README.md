@@ -26,9 +26,9 @@ Advanced 8-bit ALU in Verilog with flags, extended operations, testbench and GTK
  Direct using simulation bar to get waveform 
  We can get Schematic Diagram by Runnig RTL analysis
 - By Using Icarus Verilog
- iverilog -o alu_tb alu.v alu_tb.v
- vvp alu_tb
- gtkwave wave.vcd
- gtkwave wave.vcd wave.gtk(for direct veiwing of waveform without above process)
+ *iverilog -o alu_tb alu.v alu_tb.v
+ *vvp alu_tb
+ *gtkwave wave.vcd
+ *gtkwave wave.vcd wave.gtk(for direct veiwing of waveform without above process)
  
  
